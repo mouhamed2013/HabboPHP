@@ -116,7 +116,7 @@ INSERT INTO `habbophp_config` (`id`, `name`, `value`) VALUES
 (56, 'notes', ''),
 (57, 'comments', 'normal'),
 (58, 'oxopassid', ''),
-(59, 'oxopassamount');
+(59, 'oxopassamount', '');
 
 INSERT INTO `habbophp_config` (`id`, `name`, `value`) VALUES
 (58, 'winwin', '10000'),
