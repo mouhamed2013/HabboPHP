@@ -9,7 +9,7 @@
 
 require'init.php';
 if(!isset($_GET['amoutMethod'])) redirection($config->url_site.'/shop.php?errorPaiement');
-$amoutMethod = array('starpass','paypal','allopass');
+$amoutMethod = array('starpass','paypal','allopass','oxopass');
 if(!in_array($_GET['amoutMethod'],$amoutMethod)) redirection($config->url_site.'/shop.php?errorPaiement'); //La méthode de paiement n'exsite pas
 $am = $_GET['amoutMethod'];
 
@@ -26,6 +26,9 @@ switch($am){
 		$tpl->assign('MethodPrice',array('amout'=>$config->allopassamount , 'price' => '1 Code' , 'type' => $am));
 		$allopassData = explode("/",$config->allopassauth);
 		$tpl->assign('allopass',$allopassData);
+	break ;
+		case "oxopass":
+		$tpl->assign('MethodPrice', array('amout'=>$config->oxopassamount, 'price' => '1 Code', 'type' => $am));
 	break ;
 }
 
