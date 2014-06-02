@@ -26,7 +26,7 @@
 		{
 			$dedis = ORM::for_table('habbophp_dedis')->create();
 			$dedis->username = $user->username;
-			$dedis->message = $message;
+			$dedis->message = htmlentities(htmlspecialchars($message));
 			$dedis->save();
 			if($user->deleteJetons($config->dediprix)); echo '' ;
 		}
