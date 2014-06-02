@@ -295,6 +295,7 @@ $admin=true;
 			<li class="active"><a href="#starpass" data-toggle="tab">Starpass</a></li>
 			<li><a href="#allopass" data-toggle="tab">Allopass</a></li>
 			<li><a href="#paypal" data-toggle="tab">Paypal</a></li>
+      <li><a href="#oxopass" data-toggle="tab">oXopass</a></li>
 		</ul>
 		
 		<div class="tab-content">
@@ -396,7 +397,31 @@ $admin=true;
 					</div>
 				</div>
 			</div>
-		</div>
+      <div class="tab-pane" id="oxopass">
+          <div style="<?php if($config->oxopassid!="") { ?>display:none;<?php } ?>" class="form-actions" id="oxopassa"><a href="javascript:void(0);" onclick="$('#oxopassa').hide();$('#oxopassform').show();" class="btn btn-success"><?php echo $lang['Activate']; ?></a></div>
+        <div id="oxopassform" style="<?php if($config->oxopassid=="") { ?>display:none;<?php } ?>">
+          <div class="control-group">
+                  <label class="control-label" for="input01">oXopass ID</label>
+                  <div class="controls">
+                    <input type="text" class="input-xlarge" id="oxopassids" value="<?php echo $config->oxopassid; ?>">
+                  </div>
+                </div>
+                
+          
+                
+                <div class="control-group">
+                  <label class="control-label" for="input01"><?php echo $lang['AmountOfMoneyAfterBuy']; ?></label>
+                  <div class="controls">
+                    <input type="text" class="input-xlarge" value="<?php echo $config->oxopassamount; ?>" id="oxopassamount">
+                  </div>
+                </div>
+                
+          <div class="form-actions">
+            <a href="javascript:void(0);" onclick="setconfig($('#oxopassids').val(),'oxopassid');setconfig($('#oxopassamount').val(),'oxopassamount');" class="btn btn-primary"><?php echo $lang['Update']; ?></a>
+            <a href="javascript:void(0);" onclick="setconfig('','oxopassid');setconfig('','oxopassamount');$('#oxopassa').show();$('#oxopassform').hide();" class="btn btn-danger"><?php echo $lang['Desactivate']; ?></a>
+          </div>
+        </div>
+      </div>
 
   	</div>
   </div>
