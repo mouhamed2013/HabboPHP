@@ -114,7 +114,9 @@ INSERT INTO `habbophp_config` (`id`, `name`, `value`) VALUES
 (54, 'smtp_type', 'Autre'),
 (55, 'smtp_security', '1'),
 (56, 'notes', ''),
-(57, 'comments', 'normal');
+(57, 'comments', 'normal'),
+(58, 'oxopassid', ''),
+(59, 'oxopassamount');
 
 INSERT INTO `habbophp_config` (`id`, `name`, `value`) VALUES
 (58, 'winwin', '10000'),
