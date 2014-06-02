@@ -123,7 +123,12 @@ body { behavior: url(/js/csshover.htc); }
   </form> 
 <p style="color:red">Il faut impérativement cliquer sur "Retour sur.." pour valider votre achat.</p>
 {/if}
-
+{if $MethodPrice.type eq 'oxopass'}
+<script src="http://scripts.oxopass.com/js/54"></script>
+<noscript>
+<a href="http://www.enable-javascript.com/fr/"><img src="//scripts.oxopass.com/img/acheter-js.png" alt="" /></a>
+</noscript>
+{/if}
             </div>
 
            
