@@ -131,17 +131,23 @@ div.uscashcards  {
                                             
 
                                         </ul>
+                                        <ul>
+                                            <li {$oxopassD}>
+                                                <label>
+                                                    <span class="radio"><input type="radio" name="amoutMethod" value="oxopass"/></span>
+                                                    <div class="pricepoint-amount-container">
+                                                        <div class="credit-amount">{$config->oxopassamount} x {$config->moneyname}</div>
+                                                    </div>
+                                                    <span class="credit-amount-equals"></span>
+                                                    <span class="price-in-cents">1 code oXopass
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
 
                                         <a href="#" onclick="document.forms['selectPricePointFormForConfirmationPage'].submit();" class="large-button large-green-button"><span><b>Continuer</b></span><i></i></a>
                                 </form>
                         </div>
-                            <div id="methods">
-                                <ul>
-                                            <li><img alt="Carte Bancaire" src="themes/images/starpass.png"/></li>
-                                            <li><img alt="Paypal" src="themes/images/partner_logo_paypal_001.png"/></li>
-                                            <li><img alt="Internet+" src="themes/images/allopass.png"/></li>
-                                </ul>
-                            </div>
                         </div>
                         </div>
                         
