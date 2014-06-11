@@ -23,6 +23,9 @@ else $tpl->assign('allopassD','');
 if(empty($config->starpassacc)) $tpl->assign('starpassD','style="display:none;"');
 else $tpl->assign('starpassD','');
 
+if(empty($config->oxopassid)) $tpl->assign('oxopassD','style="display:none;"');
+else $tpl->assign('oxopassD','');
+
 $tpl->display('header.tpl');
 
 $etape = (isset($_GET['etape'])) ? $_GET['etape'] : '1' ;
