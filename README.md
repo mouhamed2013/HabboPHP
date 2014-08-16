@@ -7,7 +7,7 @@ Aucune issue/pull request ne sera traitée par l'équipe de développement actue
 HabboPHP is no longer maintained.
 Any issues or pull request will be answered by the staff.
 
-HabboPHP ist jetzt sofort nicht gepflegt.
+HabboPHP ist sofort nicht gepflegt.
 Keine Ausgabe würde Vertrag jetzt.
 
 HabboPHP是不能維持。 
