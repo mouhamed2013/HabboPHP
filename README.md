@@ -1,4 +1,4 @@
-HabboPHP 2.3
+HabboPHP 2.4
 ==============
 
 HabboPHP n'est plus maintenu.
